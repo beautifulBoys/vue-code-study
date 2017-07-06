@@ -1,0 +1,30 @@
+
+var template = (<template>
+  <div class="lixin">我是个模板</div>
+</template>)
+
+
+<script>
+
+  export default {
+   data () {
+     return {list: '我是footer'};
+   },
+   mounted () {
+     console.log('我是footer的this');
+     console.log(this);
+   },
+   methods: {
+     saylist () {
+       console.log(this.list);
+     }
+   }
+  };
+
+</script>
+
+<style>
+  .lixin {
+    color: red;
+  }
+</style>
